@@ -8,50 +8,62 @@
   <link href="css/type.css" rel="stylesheet">
   <link href="css/modules.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
 
-  <section>
-    <div>
-      <h1>Want to go to Mars?</h1>
-      <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
-
-      <form method="post" action="https://formspree.io/julian_redmond@hotmail.com">
-        <fieldset>
-          <legend>Personal details</legend>
-          <div>
-            <label for="name">Name</label>
-            <input id="name" name="name" required>
-          </div>
-          <div>
-            <label for="age">Age</label>
-            <input id="age" name="age" required>
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input id="email" name="email" required>
-          </div>
-          <div>
-            <label for="physical fitness">Physical fitness</label>
-            <select id="physical fitness" name="physical fitness">
-              <option>Super-human</option>
-              <option>Fit as a fiddle</option>
-              <option>Not terribly strong</option>
-              <option>A little couch-potato-y</option>
-            </select>
-          </div>
-          <div>
-            <label for="address">Address</label>
-            <textarea id="address" name="address" required></textarea>
-          </div>
+  <form method="post" action="https://formspree.io/julian_redmond@hotmail.com">
+    <div class="grid island">
+      <div class="unit xs-1 s-1 m-1 l-1 xl-1">
+        <h1 class="pad-t">Want to go to Mars?</h1>
+        <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+        <fieldset class="black">
+          <legend class="italic">Personal details</legend>
         </fieldset>
-        <fieldset>
+      </div>
+      <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2">
+        <div class="pad-b">
+          <label for="name">Name</label>
+          <input class="" id="name" name="name" required>
+        </div>
+        <div class="pad-b">
+          <label for="age">Age</label>
+          <input class="" id="age" name="age" required>
+        </div>
+        <div class="pad-b">
+          <label for="email">Email</label>
+          <input class="" id="email" type="email" placeholder="" name="email" required>
+        </div>
+        <div class="pad-b">
+          <label for="physicalfitness">Physical fitness</label>
+          <select class="" id="physicalfitness" name="physical fitness">
+            <option>Super-human</option>
+            <option>Fit as a fiddle</option>
+            <option>Not terribly strong</option>
+            <option>A little couch-potato-y</option>
+          </select>
+        </div>
+      </div>
+      <div class="unit xs-1 s-1 m-1 l-1 xl-1">
+        <div class="pad-b">
+          <label for="address">Address</label>
+          <textarea class="" id="address" name="address" required></textarea>
+        </div>
+        <fieldset class="black">
           <legend>Mission statement</legend>
-          <div>
-            <label for="Why do you want to go to Mars?">Why do you want to go to Mars?</label>
-            <textarea id="Why do you want to go to Mars?" name="Why do you want to go to Mars?" required></textarea>
-          </div>
-          <button type="submit">Register for the trip!</button>
+        </fieldset>
+        <div>
+          <label for="WhydoyouwanttogotoMars?">Why do you want to go to Mars?</label>
+          <textarea class="" id="whydoyouwanttogotoMars?" name="Why do you want to go to Mars?" required></textarea>
+        </div>
+      </div>
+      <div class="unit xs-1 s-1 m-1 l-1 xl-1">
+        <button class="btn" type="submit">Register for the trip!</button>
+      </div>
+      <input type="hidden" name="_subject" value="Request to join the mission">
+    </div>
+  </form>
+
 
 
 

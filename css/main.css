@@ -1,0 +1,24 @@
+html {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f2f2f2;
+}
+body {
+  background-color: #fff;
+}
+
+.black {
+  border-color: #000000;
+ }
+
+.button {
+  background-color: #000000;
+  color: #fff;
+}
+
+
+
+@media only screen and (min-width: 60em) {
+
+this will be for fixing a padding problem at the large size
+
+}
